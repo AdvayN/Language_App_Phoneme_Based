@@ -28,7 +28,7 @@ def extract_text_streamlit(uploaded_file):
         return full_text
     except Exception as e:
         return f"ERROR: {e}"
-option = st.selectbox("Select An Option", ["Upload a txt file","Choose a file"])
+option = st.radio("Select An Option", ["Upload a txt file","Choose a file"], horizontal=True)
 if option == "Upload a txt file":
     reftxtfile = st.file_uploader("Choose a reference text file", type=['txt','pdf'])
     if reftxtfile is not None:
@@ -86,7 +86,7 @@ elif option== "Choose a file":
 
 # add the title and emojis
 st.title("🎯 Pronunciation Test")
-audio_option = st.selectbox("Select An Option", ["Upload an audio file","Record Audio"])
+audio_option = st.radio("Select An Option", ["Upload an audio file","Record Audio"], horizontal=True)
 if audio_option == "Upload an audio file":
     # upload an audio file
     uploaded_file = st.file_uploader("Upload an audio file", type=['wav', 'mp3', 'ogg'])

@@ -2,14 +2,14 @@ import streamlit as st
 
 # Page configuration
 st.set_page_config(
-    page_title="Master Your Pronunciation",
+    page_title="SpeechIQ",
     page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Main title
-st.title("🎯Master Your Pronunciation")
+st.title("🎯SpeechIQ")
 st.subheader("AI-Powered Pronunciation Assessment Through Audio Tests")
 
 # Introduction section
@@ -18,7 +18,7 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.markdown("""
-    ### Welcome to Master Your Pronunciation! 👋
+    ### Welcome to SpeechIQ! 👋
     
     Perfect your pronunciation with our advanced audio-based testing system. 
 
